@@ -3,11 +3,11 @@ THIS CODE IS CREATED BY THE FOLKS AT WEBSITEDESIGNERNC.COM
 GO VISIT FOR ALL YOUR PROGRAMMING AND WEB DESIGN NEEDS!
 */
 
-$.feat.nativeTouchScroll=true;
+
 $(document).ready(function() {
 
 
-
+$.feat.nativeTouchScroll=true;
 	var count = 0;	
 	var howmanyquestions = $("#jquiz > li").length;
 	
