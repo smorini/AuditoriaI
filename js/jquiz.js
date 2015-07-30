@@ -7,7 +7,7 @@ GO VISIT FOR ALL YOUR PROGRAMMING AND WEB DESIGN NEEDS!
 $(document).ready(function() {
 
 
-$.feat.nativeTouchScroll=true;
+
 	var count = 0;	
 	var howmanyquestions = $("#jquiz > li").length;
 	
