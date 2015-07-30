@@ -26,7 +26,7 @@ body {
     color:#000;
     font-size:14px;
     display:-webkit-box;
-    background: #CBD2D8;
+    background: #FFFFFF;
     /* We want to layout our first container vertically */
     -webkit-box-orient: vertical;
     /* we want our child elements to stretch to fit the container */
@@ -494,14 +494,13 @@ body {
 **********************************************************/
 
 .ui-icon {
-    background:                         #666;
-    background:                         rgba(0,0,0,.4);
+    background:                         #000000;
     background-repeat: no-repeat;
     border-radius:                      9px;
 }
 
 
-.ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -100px; margin-top: -35px; padding: 10px 30px; background: #666;background:rgba(0,0,0,.4);border-radius:9px;color:white;}
+.ui-loader { position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -100px; margin-top: -35px; padding: 10px 30px; background: #666;background:rgba(0,0,0,.4);border-radius:9px;color:white;}
 .ui-loader.heavy {opacity:1;}
 .ui-loader h1 { font-size: 15px; text-align: center; }
 .ui-loader .ui-icon { position: static; display: block; opacity: .9; margin: 0 auto; width: 35px; height: 35px; background-color: transparent; }
@@ -511,7 +510,7 @@ body {
     -webkit-transform: rotate(360deg);
     -webkit-animation-name: spin;
     -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-iteration-count:  10;
 }
 @-webkit-keyframes spin {
     from {-webkit-transform: rotate(0deg);}
@@ -1178,7 +1177,8 @@ body {
   clear: both;
   height: 0;
 }
-*/
+
+*/
 
 
 #afui input[type="search"] {
@@ -1613,9 +1613,9 @@ body {
 
 #afui.android {
 	font:14px  'Roboto',sans-serif;
- 	background:#000;
- 	color:#fff;
-    border-color:#fff;
+ 	background:#ffffff;
+ 	color:#000000;
+    border-color:#808080;
 }
 
 #afui.android.light {
@@ -1626,7 +1626,7 @@ body {
 #afui.android  .header {
     background:inherit;
     color:inherit;
-    border-color:#33B5E5;
+    border-color:inherit;
 }
 
 #afui.android .header .button {
@@ -1642,7 +1642,7 @@ body {
 }
 
 #afui.android .menuButton:after {
-    border-color:white;
+    border-color:inherit;
 }
 
 #afui.android.light .menuButton:after {
@@ -1685,7 +1685,7 @@ body {
 #afui.android .list {
  	background:inherit;
  	color:inherit;
- 	border-color:#303030;
+ 	border-color:inherit;
 }
 
 #afui.android .list .divider {	color:black; }
@@ -1750,7 +1750,7 @@ body {
 #afui.android #aside_menu .list li,
 #afui.android #menu .list li {
     box-shadow:none;
-    border-color:#ccc;
+    border-color:inherit;
 }
 
 #afui.android #aside_menu .list .divider,
