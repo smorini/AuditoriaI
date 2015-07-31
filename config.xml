@@ -19,6 +19,7 @@
     <preference name="permissions" value="none"/>
 
     <icon src="./icon.png" />
+    <gap:splash src="./splash.png" />
    
 </widget>
 
