@@ -258,7 +258,7 @@ body {
     overflow-y:hidden;
 }
 #afui .no-scroll, #afui .panel.no-scroll {
-    overflow:hidden;
+    overflow:auto;
 }
 
 
@@ -691,7 +691,7 @@ body {
       }
       #afui .panel {
         overflow-x:visible !important;
-        overflow-y:visible !important;
+        overflow-y:auto !important;
         overflow:visible !important;
       }
 }
@@ -1678,7 +1678,7 @@ body {
 	border:none;
 }
 
-#afui.android .panel, #afui.android #modalContainer {
+#afui.android .panel, #afui.android .panel3, #afui.android #modalContainer {
  	background:inherit;
  	color:inherit;
 }
