@@ -15,6 +15,8 @@
     <author email="smorini@ull.edu.es">
         AUditoria I
     </author>
+    
+    <preference name="permissions" value="none"/>
 
     <icon src="./icon.png" />
    
