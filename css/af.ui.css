@@ -62,7 +62,7 @@ body {
     height:100%;
     display:none;
     position:absolute; top:0;
-    overflow:hidden;    
+    overflow:auto;    
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -132,7 +132,7 @@ body {
 #afui > #splashscreen {
     position:absolute;
     top:0;bottom:0;
-    width:100%;
+    width:80%;
     left:0;
     min-height:100%;
     background:rgba(29,29,28,1) !important;
@@ -158,6 +158,8 @@ body {
     -webkit-box-sizing:border-box; box-sizing:border-box;
     height:44px;
     left:0; right:0;
+    background: #971289;
+    color: #ffffff;
     
 } /* This is masthead bar that appears at the top of the UI */
 
@@ -173,7 +175,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     left: 27.5%;
-    color: inherit;
+    color: #FFFFFF;
     padding: 10px 0;
     text-shadow: rgba(0,0,0,0.8) 0 -1px 0;
     text-align: center;
@@ -711,7 +713,7 @@ body {
     background:#971289;
     border:none;
     border-bottom:1px solid #971289;
-    color:white;
+    color:#FFFFFF;
 }
 
 #afui  .header h1 {
@@ -1401,7 +1403,7 @@ body {
 
 #afui .header .button-grouped>.button {
 	margin:0;
-    border-color:#fff;
+    border-color:#971289;
 }
 
 #afui .button-grouped { 
@@ -1523,7 +1525,7 @@ body {
 }
 
 #afui .header .button {
-    color: #fff;
+    color: #000;
     background:none;
     border-color: transparent;
  	font-size:12px;
@@ -1623,13 +1625,13 @@ body {
 }
 
 #afui.android  .header {
-    color:inherit;
+    color:#FFFFFF;
     border-color:inherit;
     background:#971289;
 }
 
 #afui.android .header .button {
-    color: inherit;
+    color: #FFFFFF;
     background:inherit;
     font-size:14px;
     box-shadow:none;
@@ -1788,8 +1790,8 @@ body {
 
 #afui.android .button.pressed,
 #afui.android  .header .button-grouped > .button.pressed {
-	background:#33B5E5;
-	border-color:#33B5E5;
+	background:#971289;
+	border-color:#971289;
 }
 
 #afui.android .button.previous::after {
