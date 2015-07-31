@@ -1681,6 +1681,7 @@ body {
 #afui.android .panel, #afui.android .panel3, #afui.android #modalContainer {
  	background:inherit;
  	color:inherit;
+ 	-webkit-overflow-scrolling:touch;
 }
 
 #afui.android .list {
@@ -2248,7 +2249,7 @@ body {
 /* collapsed panel content */
 .panelcollapsed .panelcontent { display: none; }
 
-#jquiz {height=90%; overflow-y: auto !important;}
+#jquiz {height=90%; -webkit-overflow-scrolling:touch; overflow-y: auto !important;}
 
 #jquiz li ul {
 	  columns: 2;
@@ -2261,22 +2262,22 @@ body {
 	text-align:center;
 	margin: 0 0 10px 0;
 	overflow-y: auto !important;
+	-webkit-overflow-scrolling:touch;
 	}
 #jquiz li p {font-weight:bold; margin: 15px 5px 5px 15px; border: 1px solid #ccc;
   border-radius: 6px;
  padding: 20px 0 20px 25px; }
 #jquiz > li {padding-bottom:10px;}
-.unanswered, .answered {margin: 10px 0 0 0;
-			padding:0;}
+.unanswered, .answered {margin: 10px 0 0 0; padding:0;}
 #jquiz li ul li {
-border: 1px solid #ccc;
-  border-radius: 10px;				
-margin: 0px 5px 0px 5px;
-cursor:pointer;
-				padding: 5px 0 5px 0;
-				height:36px;
-				background-color: #FFF;
-			}
+	border: 1px solid #ccc;
+  	border-radius: 10px;				
+	margin: 0px 5px 0px 5px;
+	cursor:pointer;
+	padding: 5px 0 5px 0;
+	height:36px;
+	background-color: #FFF;
+	}
 
 	#jquiz strong {
 		font-weight:bold;
@@ -2292,7 +2293,7 @@ cursor:pointer;
 	background-color:#F00 !important;
 }
 .hidden {
-	display:none;
+	display:none; -webkit-overflow-scrolling:touch;
 }
 .explanation {
 
@@ -2306,7 +2307,7 @@ cursor:pointer;
 .rightbox, .wrongbox {
 	padding:5px !important;
 	margin-top: 5px !important;
-margin: 15px 5px 5px 15px;
+		margin: 15px 5px 5px 15px;
 border-radius: 6px;
 }
 .rightbox {
