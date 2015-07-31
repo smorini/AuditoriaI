@@ -1,15 +1,15 @@
 <html>
   <head>
-    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <title>Auditoria I</title>
     <!--
     This template can be used for simple list view application that has a main view with list and detail view for each list item, for applications like Mail app, Messages App or Twitter app.-->
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;">
     <link rel="stylesheet" type="text/css" href="css/af.ui.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
-    <script src="js/utils.js" type="text/javascript"></script>
-    <script type="text/javascript" charset="utf-8" src="js/appframework.ui.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/appframework.ui.min.js"></script>
+    <script src="js/utils.js" type="text/javascript"></script>   
     <script src="js/jquiz.js" type="text/javascript"></script>
     <!-- Required if packaging to native app using Intel XDK -->
     <script src="intelxdk.js"></script>
@@ -23,8 +23,9 @@
     </script>
     <!-- end Intel XDK code -->
     <script>
+      $.feat.nativeTouchScroll=true;
         $.ui.autoLaunch = false; 
-        $.ui.backButtonText = "Atrás";
+        $.ui.backButtonText = "AtrÃ¡s";
                 
         $(document).ready(function(){
             $.ui.launch();
@@ -33,20 +34,20 @@
     </script>
   </head>
   <body>  
-  <div id="afui">    <div id="splashscreen" class='ui-loader'>      <img src="./img/ull_logo.png">      <br><br>      <span class='ui-icon ui-icon-loading spin'></span>      <h1>Auditoría I<br>GCF<br>M. Lilibeth Fuentes Medina</h1>    </div>  </div>  
-
+  <!---<div id="afui">    <div id="splashscreen" class='ui-loader'>      <img src="./img/ull_logo.png">      <br><br>      <span class='ui-icon ui-icon-loading spin'></span>      <h1>AuditorÃ­a I<br>GCF<br>M. Lilibeth Fuentes Medina</h1>    </div>  </div>  
+--->
     <div id="afui">
       <div id="content" style="">
         <!--List View Page-->
         <div class="panel" title="Auditoria I" id="menu" data-footer="none" selected="true">
           <header>
-            <h1>Auditoría I</h1>
+            <h1>AuditorÃ­a I</h1>
           </header>
           <br>
           <ul class="list inset">
             <li><a class="icon paper" href="#item1">Tutoriales</a></li>
             <li><a class="icon tag" href="#item2">Glosario</a></li>
-            <li><a class="icon target" href="#item3">Test Autoevaluación</a></li>
+            <li><a class="icon target" href="#item3">Test AutoevaluaciÃ³n</a></li>
             <li class="divider"></li>
             <li><a class="icon info" href="#item4">Acerca de</a></li>
           </ul>
@@ -55,7 +56,7 @@
         <!-- Para tutorial -->
         <div class="panel" title="Tutoriales" id="item1" data-footer="none"><header>
             <h1>Tutoriales</h1>
-            <a id="backButton" class="button backButton">Atrás</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
+            <a id="backButton" class="button backButton">AtrÃ¡s</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
           <ul class="list inhomeset">
             <li><a href="#tuto1">NIC</a></li>
             <li><a href="#tuto2">Informes</a></li>
@@ -65,10 +66,10 @@
           </ul>
         </div>
         <!-- Para glosario -->
-        <div class="panel" title="Glosario" id="item2" data-footer="none">
+        <div class="panel" title="Glosario" id="item2" data-footer="none" overflow-y:"auto">
           <header>
             <h1>Glosario</h1>
-            <a id="backButton" class="button backButton">Atrás</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
+            <a id="backButton" class="button backButton">AtrÃ¡s</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
           <div class="panelcollapsed">
             <h5>A</h5>
             <div class="panelcontent">
@@ -114,54 +115,54 @@
         <div class="panel" id="tuto1" data-footer="none">
           <header>
             <h1>NICs</h1>
-            <a id="backButton" class="button backButton">Atrás</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
-          <p>Aquí va el texto</p>
+            <a id="backButton" class="button backButton">AtrÃ¡s</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
+          <p>AquÃ­ va el texto</p>
         </div>
         <!-- Para Tuto2 -->
         <div class="panel" id="tuto2" data-footer="none">
           <header>
             <h1>Tuto 2</h1>
-            <a id="backButton" class="button backButton">Atrás</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
-          <p>Aquí va el texto</p>
+            <a id="backButton" class="button backButton">AtrÃ¡s</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
+          <p>AquÃ­ va el texto</p>
         </div>
         <!-- Para Tuto3 -->
         <div class="panel" id="tuto3" data-footer="none">
           <header>
             <h1>3</h1>
-            <a id="backButton" class="button backButton">Atrás</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
-          <p>Aquí va el texto</p>
+            <a id="backButton" class="button backButton">AtrÃ¡s</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
+          <p>AquÃ­ va el texto</p>
         </div>
         <!-- Para Tuto4 -->
         <div class="panel" id="tuto4" data-footer="none">
           <header>
             <h1>NICs</h1>
-            <a id="backButton" class="button backButton">Atrás</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
-          <p>Aquí va el texto</p>
+            <a id="backButton" class="button backButton">AtrÃ¡s</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
+          <p>AquÃ­ va el texto</p>
         </div>
         <!-- Para Tuto5 -->
         <div class="panel" id="tuto5" data-footer="none">
           <header>
             <h1>5</h1>
-            <a id="backButton" class="button backButton">Atrás</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
-          <p>Aquí va el texto</p>
+            <a id="backButton" class="button backButton">AtrÃ¡s</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
+          <p>AquÃ­ va el texto</p>
         </div>
         <!-- Para gloa1 -->
         <div class="panel" id="gloa1" data-footer="none">
           <header>
             <h1>Auditoria</h1>
-            <a id="backButton" class="button backButton">Atrás</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
+            <a id="backButton" class="button backButton">AtrÃ¡s</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
           <p>La Auditoria es bla bla bla</p>
         </div>
         <!--- Para test -->
-        <div class="panel3" title="Autoevaluación" id="item3" data-footer="none">
+        <div class="panel3" title="AutoevaluaciÃ³n" id="item3" data-footer="none">
           <header>
-            <h1>Autoevaluación</h1>
-            <a id="backButton" class="button backButton">Atrás</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
+            <h1>AutoevaluaciÃ³n</h1>
+            <a id="backButton" class="button backButton">AtrÃ¡s</a><a class="button icon home" style="float:right" href="#menu"></a> </header>
           <ul id="jquiz">
             
             <!--- Pregunta 1 -->
             <li><p>2 + 2 = 4</p>
-             <ul>   <li class="correct">Sí</li>      <li>No</li>
+             <ul>   <li class="correct">SÃ­</li>      <li>No</li>
         </ul>
         <div class="explanation hidden">
           Por supuesto.
@@ -169,34 +170,34 @@
       </li>
 <!--- Pregunta 2 -->
             <li><p>Tu profesora preferida de Auditoria I es Lili</p>
-             <ul>   <li class="correct">Sí</li>      <li>No</li>
+             <ul>   <li class="correct">SÃ­</li>      <li>No</li>
         </ul>
         <div class="explanation hidden">
-          Por supuesto que sí, no te queda otra.
+          Por supuesto que sÃ­, no te queda otra.
         </div>
       </li>
 <!--- Pregunta 3 -->
-            <li><p>Si tú me dices ven lo dejo todo?</p>
-             <ul>   <li class="correct">Sí</li>      <li>No</li>
+            <li><p>Si tÃº me dices ven lo dejo todo?</p>
+             <ul>   <li class="correct">SÃ­</li>      <li>No</li>
         </ul>
         <div class="explanation hidden">
-          Por supuesto que sí.
+          Por supuesto que sÃ­.
         </div>
       </li>
 <!--- Pregunta 3 -->
-            <li><p>Te resultan fáciles estas preguntas</p>
-             <ul>   <li class="correct">Sí</li>      <li>No</li>
+            <li><p>Te resultan fÃ¡ciles estas preguntas</p>
+             <ul>   <li class="correct">SÃ­</li>      <li>No</li>
         </ul>
         <div class="explanation hidden">
-          Por supuesto que sí.
+          Por supuesto que sÃ­.
         </div>
       </li>            
 <!--- Pregunta 3 -->
             <li><p>Seguro?</p>
-             <ul>   <li class="correct">Sí</li>      <li>No</li>
+             <ul>   <li class="correct">SÃ­</li>      <li>No</li>
         </ul>
         <div class="explanation hidden">
-          Por supuesto que sí.
+          Por supuesto que sÃ­.
         </div>
       </li>            
 <!--- Todas las preguntas encima de esto -->            
