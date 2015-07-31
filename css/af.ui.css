@@ -234,6 +234,7 @@ body {
     position:absolute; top:0; left:0;
     overflow-y:auto !important;
     overflow-x:hidden;
+    -webkit-overflow-scrolling:touch;
     -webkit-backface-visibility: hidden;   
     padding:10px;
     padding-top:0px;
@@ -707,9 +708,9 @@ body {
 }
 
 #afui .header{
-    background:#6B008F;
+    background:#971289;
     border:none;
-    border-bottom:1px solid #6B008F;
+    border-bottom:1px solid #971289;
     color:white;
 }
 
@@ -1624,7 +1625,7 @@ body {
 #afui.android  .header {
     color:inherit;
     border-color:inherit;
-    background:#6B008F
+    background:#971289;
 }
 
 #afui.android .header .button {
@@ -2306,19 +2307,19 @@ margin: 15px 5px 5px 15px;
 border-radius: 6px;
 }
 .rightbox {
-	background-color: #006600;
+	background-color: #00FF00;
 	border: 3px solid #52FF52;
 
 }
 	.rightbox a {
-		color: #808066;
+		color: #000000;
 	}
 .wrongbox {
 	background-color:#F0B0A9;
 	border: 3px solid #A20000;
 }
 	.wrongbox a {
-		color: #825C58;
+		color: #000000;
 	}
 #jquizremarks {
 	display:none;
