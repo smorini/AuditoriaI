@@ -1754,7 +1754,7 @@ body {
 
 #afui.android #aside_menu .list .divider,
 #afui.android #menu .list .divider {
-	background:inherit;
+	background:#000000;
 	color:inherit;
 	font-size: 1em;
 }
