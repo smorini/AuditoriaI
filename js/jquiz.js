@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
 	var count = 0;	
-	var howmanyquestions = $("#jquiz > li").length;
+	var howmanyquestions = $("#jquiz > li.hasClass("test1")  ").length;
 	
 	//the function for a clicked item
 	$("#jquiz li ul li").click(function(){
