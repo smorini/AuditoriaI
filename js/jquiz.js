@@ -215,7 +215,7 @@ var count5 = 0;
 				$(this).parent().parent().children("div").fadeTo(750, 1);
 			}
 			
-			if ($('ul.answered3').length == howmanyquestions5) {
+			if ($('ul.answered5').length == howmanyquestions5) {
 				$('#jquizremarks5').fadeIn('slow');
 				$('#jquiztotal5').html('Has acertado '+count5+' de '+howmanyquestions5+' preguntas.');
 			}
